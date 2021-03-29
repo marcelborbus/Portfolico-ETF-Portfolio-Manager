@@ -1,5 +1,6 @@
 # portfoliomanager
 ## Anmerkungen
+- Die in prefs.json eingetragenen Länder müssen mit den Ländern aus der CSV übereinstimmen 
 - CSV Dateien werden mit Datenbanken ersetztz, welche durch die EODHistoricalData (ETF Daten) API gefüllt werden.
 - Input und Output über HTTP sobald wir auf die Google Cloud Plattform wechseln.
 - MSCI ALL WORLD als Standardwerte werden Client-Side eingesetzt

@@ -1,22 +1,22 @@
 {
     "countries": {
-        "United States of America (the)": 0.0,
+        "United States of America (the)": 0.2,
         "Argentina": 0.0,
-        "Canada": 0.1415999985,
+        "Canada": 0.1,
         "Chile": 0.0,
-        "China": 0.0,
-        "Denmark": 0.0,
-        "France": 0.0,
-        "India": 0.0,
-        "Ireland": 0.0230999994,
+        "China": 0.2,
+        "Denmark": 0.1,
+        "France": 0.2,
+        "India": 0.1,
+        "Ireland": 0.0,
         "Israel": 0.0,
-        "Italy": 0.0
+        "Italy": 0.1
     },
     "industries": {
-        "Diversified Consumer Services": 0.0108000004,
-        "Hotels, Restaurants & Leisure": 0.0208999991,
-        "IT Services": 0.0,
-        "Internet & Direct Marketing Retail": 0.0,
+        "Diversified Consumer Services": 0.2,
+        "Hotels, Restaurants & Leisure": 0.3,
+        "IT Services": 0.4,
+        "Internet & Direct Marketing Retail": 0.1,
         "Life Sciences Tools & Services": 0.0
     }
 }

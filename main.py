@@ -9,9 +9,9 @@ def main():
 
     result = json.loads(process_request(user_req))
 
-    print()
-    print('result', result['result'])
-    print('error:', result['error'])
-    print()
+    print('result:', result['result'])
+    print('deviance:', result['deviance'])
+    print('status_code:', result['status_code'])
+    # print('estimate:', result['estimate'])
 
 main()

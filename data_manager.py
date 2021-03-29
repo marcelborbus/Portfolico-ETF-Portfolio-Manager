@@ -1,10 +1,12 @@
 import pandas as pd
 
-def result_to_dict(result):
-    result.update({"estimate": get_exposures_from_dict(result["result"])})
+# Fügt die Anteile der Schätzung dem Ergebnis hinzu, um dem Nutzer die Abweichung zu veranschaulichen
+def update_result_with_estimate(result):
+    result.update({"estimate": estimate_to_exposures(result["result"])})
     return result
 
-def get_exposures_from_dict(dictionary):
+
+def estimate_to_exposures(dictionary):
     industry = pd.read_csv('industry_exposure.csv', index_col=0).astype('float32') # change for firebase
     country = pd.read_csv('country_exposure.csv', index_col=0).astype('float32')
 
@@ -17,24 +19,24 @@ def get_exposures_from_dict(dictionary):
 
     return {"industry": etf_list_industry.sum().to_dict(), "country": etf_list_country.sum().to_dict()}
 
+# database access
 def get_data_pool():
     industry_exposure = pd.read_csv('industry_exposure.csv', index_col=0).astype('float32') # change for firebase
     country_exposure = pd.read_csv('country_exposure.csv', index_col=0).astype('float32')
     return industry_exposure.join(country_exposure)
 
-def json_to_user_preferences(user_req, data_pool=get_data_pool()):
-    base_exposure = data_pool.loc['AAXJ'].to_frame().T.reset_index(drop=True) # change to IE00B3RBWM25
-
+def json_to_user_preferences(user_req, data_pool_columns=get_data_pool().columns):
+    # json to DataFrames
     user_industry = pd.DataFrame(user_req['industries'], index=[0])
     user_country = pd.DataFrame(user_req['countries'], index=[0])
-
     user_preferences = user_industry.join(user_country)
-    combined_exposures = pd.concat([user_preferences, base_exposure])
 
-    final_exposures = combined_exposures.groupby(combined_exposures.index).first().sort_index(axis=1)
-    return final_exposures
+    # apply columns of data_pool
+    combined_exposures = pd.concat([user_preferences, pd.DataFrame(columns=data_pool_columns)]).fillna(0)
+    return combined_exposures.sort_index(axis=1)
 
+# return top 100 ETFs by avgVolume
 def preselect_by_volume(data_pool):
     volumes = pd.read_csv('volumes.csv', index_col=0)
-    filtered_symbols = volumes.sort_values('avgVolume', ascending=False)[:100].index.values
+    filtered_symbols = volumes.sort_values('avgVolume', ascending=False)[:100].index.values # 100 for performance
     return data_pool.loc[data_pool.index.intersection(filtered_symbols),:]

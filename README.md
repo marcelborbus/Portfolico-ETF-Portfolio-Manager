@@ -1,11 +1,12 @@
 # portfoliomanager
+## Installation
 in python 3.7 oder 3.8:
 
 pip install -r requirements.txt
 
 python main.py
 
-# Theoretische Erklärung
+## Theoretische Erklärung
 Erstmal versuchen wir dem Nutzer eine Kombination an gewichteten ETFs vorzuschlagen, welche seinen Wünschen möglichst nahe kommt, 
 sprich die Auswahl wird noch nicht auf Rendite, Volatilität usw. optimisiert. Sprich: "Damit deine angegebene Länderverteilung möglichst gut 
 in deinem Portfolio repräsentiert wird, könntest du dieses Portfolio in erwägung ziehen".

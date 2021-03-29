@@ -1,7 +1,7 @@
 # portfoliomanager
 ## Anmerkungen
-Csv Dateien werden mit Datenbanken ersetztz, welche durch die EODHistoricalData API gefüllt werden.
-Input und Output über HTTP sobald wir auf die Google Cloud Plattform wechseln.
+- CSV Dateien werden mit Datenbanken ersetztz, welche durch die EODHistoricalData (ETF Daten) API gefüllt werden.
+- Input und Output über HTTP sobald wir auf die Google Cloud Plattform wechseln.
 
 ## Installation
 In Python 3.7 oder 3.8:

@@ -26,3 +26,6 @@ zu gewichten, dass der Abstand zwischen den gewichteten ETFs w*v und dem Präfer
 Da wir die Anzahl der ETFs erstmal auf 10 begrenzen wollten, ist w = 0 oder zwischen 0,1 und 1. Um genau zu sein 
 ist das Optimisierungsproblem nicht rein quadratisch, sondern ein gemischt-ganzzahliges quadratisches Programm (MIQP). Da sich MIQP 
 einfach mit CPLEX modellieren lassen, haben wir uns für diesen Optimizer entschieden.
+
+## Praktische Erklärung
+Kommentare werden die nächsten Tage zum Code hinzugefügt...

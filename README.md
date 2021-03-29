@@ -33,3 +33,9 @@ einfach mit CPLEX modellieren lassen, haben wir uns für diesen Optimizer entsch
 
 ## Praktische Erklärung
 Kommentare werden die nächsten Tage zum Code hinzugefügt...
+
+## Layout
+Hier ist ein Prototyp, wie die App mal aussehen könnte:
+https://drive.google.com/file/d/1MA4P9mcyqSAbvZQtruF0yuPWDxKtPCn7/view?usp=sharing
+
+- Marcel Borbus

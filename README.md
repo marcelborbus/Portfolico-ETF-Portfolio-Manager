@@ -1,6 +1,6 @@
 # portfoliomanager
 ## Installation
-in python 3.7 oder 3.8:
+In Python 3.7 oder 3.8:
 
 pip install -r requirements.txt
 

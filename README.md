@@ -2,7 +2,7 @@
 ## Anmerkungen
 - CSV Dateien werden mit Datenbanken ersetztz, welche durch die EODHistoricalData (ETF Daten) API gefüllt werden.
 - Input und Output über HTTP sobald wir auf die Google Cloud Plattform wechseln.
-- MSCI ALL WORLD als Standardwerte wird Client-Side geschehen
+- MSCI ALL WORLD als Standardwerte werden Client-Side eingesetzt
 
 ## Installation
 In Python 3.7 oder 3.8:

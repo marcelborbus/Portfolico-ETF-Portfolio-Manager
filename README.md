@@ -5,10 +5,8 @@
 
 ## Installation
 In Python 3.7 oder 3.8:
-
-pip install -r requirements.txt
-
-python main.py
+- pip install -r requirements.txt
+- python main.py
 
 ## Theoretische Erklärung
 Erstmal versuchen wir dem Nutzer eine Kombination an gewichteten ETFs vorzuschlagen, welche seinen Wünschen möglichst nahe kommt, 

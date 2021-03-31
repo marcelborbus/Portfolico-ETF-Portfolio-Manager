@@ -33,6 +33,9 @@ def get_data_pool():
 
     db = firestore.client()
 
+    users_ref = db.collection(u'ETFS')
+    docs = users_ref.stream()
+
     data_pool = pd.DataFrame()
     for doc in docs:
         doc_dict = doc.to_dict()
@@ -59,6 +62,9 @@ def get_volumes():
     })
 
     db = firestore.client()
+
+    users_ref = db.collection(u'ETFS')
+    docs = users_ref.stream()
 
     data_pool = pd.DataFrame()
     for doc in docs:

@@ -1,0 +1,4 @@
+cplex
+docplex
+numpy
+pandas

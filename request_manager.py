@@ -14,5 +14,5 @@ def process_request(request):
     preselection = preselect_by_volume(data_pool)
 
     result = weigh_data_to_match_preferences(preselection, user_prefenrences)
-    response = update_result_with_estimate(result)
-    return json.dumps(response)
+    """response = update_result_with_estimate(result)"""
+    return json.dumps(result)

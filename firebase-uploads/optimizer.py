@@ -9,10 +9,7 @@ def indices_to_tickers(result, data_pool):
 # DataFrame zu Vektor mit der Richtigen größe
 def to_numpy(dataframe, is_matrix=False):
     vector = dataframe.sort_index(axis=1).to_numpy()
-
-    if (not is_matrix):
-        vector = vector.reshape(np.size(vector))
-
+    if (not is_matrix): vector = vector.reshape(np.size(vector))
     return vector
 
 # Zielfunktion

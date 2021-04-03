@@ -1,8 +1,10 @@
 # portfoliomanager
+## Update:
+Die Funktionen wurden auf der Google Cloud hochgeladen und sind jetzt von überall ansprechbar. Im firebase-uploads-Ordner befindet sich eine test.yp Datei, mit der diese Funktion aus der Cloud aufgerufen werden kann. 
+
 ## Anmerkungen
 - Die in prefs.json eingetragenen Länder müssen mit den Ländern aus der CSV übereinstimmen 
 - CSV Dateien werden mit Datenbanken ersetztz, welche durch die EODHistoricalData (ETF Daten) API gefüllt werden.
-- Input und Output über HTTP sobald wir auf die Google Cloud Plattform wechseln.
 - MSCI ALL WORLD als Standardwerte werden Client-Side eingesetzt
 
 ## Installation

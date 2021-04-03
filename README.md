@@ -1,6 +1,6 @@
 # portfoliomanager
 ## Update:
-Die Funktionen wurden auf der Google Cloud hochgeladen und sind jetzt von überall ansprechbar. Im firebase-uploads-Ordner befindet sich eine test.yp Datei, mit der diese Funktion aus der Cloud aufgerufen werden kann. 
+Die Funktionen wurden auf der Google Cloud hochgeladen und sind jetzt von überall ansprechbar. Im firebase-uploads-Ordner befindet sich eine test.py Datei, mit der diese Funktion aus der Cloud aufgerufen werden kann. 
 
 ## Anmerkungen
 - Die in prefs.json eingetragenen Länder müssen mit den Ländern aus der CSV übereinstimmen 

@@ -19,9 +19,7 @@ in deinem Portfolio repräsentiert wird, könntest du dieses Portfolio in erwäg
 
 Für dieses Optimisierungsproblem lässt sich ein Quadratisches Programm (QP). Drückt man die Länderanteile 
 als Vektoren aus und gewichtet sie mit einer Variable zwischen 0 und 1, dann kann man sagen, dass der Abstand zwischen den gewichteten ETFs 
-und einem Ziel-ETF minimal sein sollte. Wenn man dies dann aufgeställt hat kann man dies einen Optimizer lösen lassen. Wir benutzen CPLEX von IBM.
-Meines Wissens nach löst CPLEX das Modell mit Branch and Bound Algorithmen, aber das ist für uns erstmal irellevant und deshalb habe ich mich damit auch noch 
-nicht auseinandergesetzt.
+und einem Ziel-ETF minimal sein sollte. Wenn man dies dann aufgeställt hat kann man dies einen Optimizer lösen lassen. Wir benutzen CPLEX von IBM. (Branch and Bound)
 
 Quadratisches Programm:
 https://drive.google.com/file/d/1_RIRFqNB4Cg9X4gSXmcwkPqj4f_FBSiL/view?usp=sharing

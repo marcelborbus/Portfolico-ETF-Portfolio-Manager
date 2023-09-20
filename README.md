@@ -1,4 +1,6 @@
 # portfoliomanager
+Eine App, um eigene ETF-Portfolios nach eigenen Kriterien zusammenzustellen (Länderanteile, Branchenanteile, etc...) und in Zukunft auch zu analysieren. Umgesetzt ist das Recommender-System.
+
 ## Update:
 Die Funktionen wurden auf der Google Cloud hochgeladen und sind jetzt von überall ansprechbar. Im firebase-uploads-Ordner befindet sich eine test.py Datei, mit der diese Funktion aus der Cloud aufgerufen werden kann. 
 

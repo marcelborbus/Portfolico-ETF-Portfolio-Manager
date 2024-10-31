@@ -19,7 +19,7 @@ Erstmal versuchen wir dem Nutzer eine Kombination an gewichteten ETFs vorzuschla
 sprich die Auswahl wird noch nicht auf Rendite, Volatilität usw. optimisiert. Sprich: "Damit deine angegebene Länderverteilung möglichst gut 
 in deinem Portfolio repräsentiert wird, könntest du dieses Portfolio in erwägung ziehen".
 
-Für dieses Optimisierungsproblem lässt sich ein Quadratisches Programm (QP). Drückt man die Länderanteile 
+Dieses Optimisierungsproblem lässt sich als ein Quadratisches Programm (QP) ausdrücken. Drückt man die Länderanteile 
 als Vektoren aus und gewichtet sie mit einer Variable zwischen 0 und 1, dann kann man sagen, dass der Abstand zwischen den gewichteten ETFs 
 und einem Ziel-ETF minimal sein sollte. Wenn man dies dann aufgeställt hat kann man dies einen Optimizer lösen lassen. Wir benutzen CPLEX von IBM. (Branch and Bound)
 
